@@ -18,6 +18,7 @@ define([],
 
             if (scriptContext.request.method === 'GET') {
                 scriptContext.response.write('Hello, World!');
+                //add more logic as needed
             } else {
                 scriptContext.response.write('This Suitelet only handles GET requests.');
             }
