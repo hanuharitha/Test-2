@@ -16,6 +16,12 @@ define([],
 
             //logic here
 
+            if (scriptContext.request.method === 'GET') {
+                scriptContext.response.write('Hello, World!');
+            } else {
+                scriptContext.response.write('This Suitelet only handles GET requests.');
+            }
+
         }
 
         return {onRequest}
